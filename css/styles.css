@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Playfair+Display:wght@700&display=swap");
+/* part 2: Google fonts Playfair and Display have already been added to your starter CodePen */
+
+html {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
+	background-color: #fff8ec;
+	color: #3b2a20;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	color: #3b2a20;
+	padding: 0;
+	min-height: 100%;
+	background-color: #fff8ec;
+	margin: 0; /* part 2: The page should have no extra white gap around the edges. */
+	/* 	font-family: "Playfair Display", serif; */
+}
+
+.container {
+	background-color: #fff8ec;
+	text-align: center; /* 	part 3: The shop name, the tagline, and all of the section headings are centered. */
+	margin: 2rem 1rem; /* part 3: The container should have some breathing room at the top and bottom of the page, and a little space on its left and right sides. */
+	/* 		max-width: 1000px; */
+}
+
+img {
+	height: 8rem;
+	width: 17rem;
+	border-radius: 5px;
+	/* 	part 3:The hero photo is much bigger than your container. Make sure it never sticks out past the container. It should sit in the center of the container, and be no wider than half of the container. */
+}
+
+.card {
+	background-color: #ffffff;
+	border: 1px solid #f4b942;
+	border-radius: 15px;
+	width: 172px;
+	padding: 2px 14px;
+	text-align: left;
+	/* 	part 2: Each special should look like a card: a different background than the page, a visible border, rounded corners, and enough space inside that the text does not touch the edges. */
+}
+
+.specials {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	/* 	part 4: The cards are spread across the row with even space between them. There should be no extra space before the first card or after the last one. */
+}
+
+.price {
+	color: #b5446e;
+}
+
+.tag {
+	background-color: #f4b942;
+	border-radius: 25px;
+	padding: 10px 20px;
+	margin: 4px;
+	text-align: center;
+}
+
+.tags-wrapper {
+	/* 	part 4:The three good-to-know items sit in a row too. Make them look like small pills, and group them in the center of the page with a little space between them. */
+	display: flex;
+	margin-top: -8px;
+	margin-bottom: 2rem;
+	justify-content: center;
+	/* 	Part Stretch Challenges: Make the good-to-know items stack on top of each other instead of sitting in a row, but keep them centered */
+	flex-direction: column;
+	align-items: center;
+	/* 	part 4: The three specials sit side by side in a row, not stacked. */
+}
+
+li {
+	text-align: left;
+}
+
+/* .tag:hover, */
+.card:hover {
+	/* Part Stretch Challenges: Add a hover effect to your cards that you design yourself */
+	background-color: black;
+	color: #5ac15a;
+}
+
+footer {
+	/* 	part 4: The footer is the only thing outside the container. It should reach from the left edge of the page to the right edge, have a different background color than the page, and have its text centered. */
+	background-color: #b5446e;
+	text-align: center;
+	padding: 1px;
+	color: black;
+}
+
+/* Part Stretch Challenges: Put the address and copyright line on opposite ends of the footer, in a single row*/
+.footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 50px;
+}
